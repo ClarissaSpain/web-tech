@@ -91,25 +91,6 @@ const textNodes = [{
         },
         nextText: 6
       },
-
-
-
-      // {
-      //   text: 'Trade the goo for a sword',
-      //   requiredState: (currentState) => currentState.blueGoo,
-      //   setState: { blueGoo: false, sword: true },
-      //   nextText: 3
-      // },
-      // {
-      //   text: 'Trade the goo for a shield',
-      //   requiredState: (currentState) => currentState.blueGoo,
-      //   setState: { blueGoo: false, shield: true },
-      //   nextText: 3
-      // },
-      // {
-      //   text: 'Ignore the merchant',
-      //   nextText: 3
-      // }
     ]
   },
   {
@@ -129,10 +110,6 @@ const textNodes = [{
     id: 4,
     text: 'A loud, belch echoes through the market.'+' “That one had some kick!” the dwarf proudly pats a half-empty keg. “Bring yer mugs, and Ol’ Bugman will fill ye up, for some coin of course!” Several travelers happily crowd the table, eager for a taste of the renown Bugman’s Brew. Buy some brew?',
     options: [
-      // {
-      //   text: 'Restart',
-      //   nextText: -1
-      // }
       {
         text: 'Yes, please.',
         nextText: 8
@@ -154,16 +131,6 @@ const textNodes = [{
         text: 'Ignore them.',
         nextText: 2
       },
-      // {
-      //   text: 'Buy Axe',
-      // },
-      // {
-      //   text: 'Buy Sword',
-      // },
-      // {
-      //   text: 'Ignore',
-      //   nextText: 2
-      // }
     ]
   },
   {
@@ -182,25 +149,6 @@ const textNodes = [{
         text: 'Go back',
         nextText: 2
       }
-      // {
-      //   text: 'Try to run',
-      //   nextText: 8
-      // },
-      // {
-      //   text: 'Attack it with your sword',
-      //   requiredState: (currentState) => currentState.sword,
-      //   nextText: 9
-      // },
-      // {
-      //   text: 'Hide behind your shield',
-      //   requiredState: (currentState) => currentState.shield,
-      //   nextText: 10
-      // },
-      // {
-      //   text: 'Throw the blue goo at it',
-      //   requiredState: (currentState) => currentState.blueGoo,
-      //   nextText: 11
-      // }
     ]
   },
   {
@@ -252,10 +200,6 @@ const textNodes = [{
         text: 'Ignore them.',
         nextText: 2
       },
-      // {
-      //   text: 'Congratulations. Play Again.',
-      //   nextText: -1
-      // }
     ]
   },
   {
