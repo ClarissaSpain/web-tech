@@ -16,6 +16,8 @@ function startGame() {
   showTextNode(1)
 }
 
+//pulling from an index (the one I built below) and replaces the options
+// with new options.
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
   textElement.innerText = textNode.text
@@ -23,6 +25,7 @@ function showTextNode(textNodeIndex) {
     optionButtonsElement.removeChild(optionButtonsElement.firstChild)
   }
 
+//Event listener for each button/click.
   textNode.options.forEach(option => {
     if (showOption(option)) {
       const button = document.createElement('button')
