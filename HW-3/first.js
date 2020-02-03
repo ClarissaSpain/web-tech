@@ -124,7 +124,7 @@ const textNodes = [{
   },
   {
     id: 4,
-    text: 'A loud, belch echoes through the market. “That one had some kick!” the dwarf proudly pats a half-empty keg. “Bring yer mugs, and Ol’ Bugman will fill ye up, for some coin of course!” Several travelers happily crowd the table, eager for a taste of the renown Bugman’s Brew. Buy some brew?',
+    text: 'A loud, belch echoes through the market.'+' “That one had some kick!” the dwarf proudly pats a half-empty keg. “Bring yer mugs, and Ol’ Bugman will fill ye up, for some coin of course!” Several travelers happily crowd the table, eager for a taste of the renown Bugman’s Brew. Buy some brew?',
     options: [
       // {
       //   text: 'Restart',
@@ -276,5 +276,5 @@ const textNodes = [{
     ]
   }
 ]
-
+//after two tables have the choice to leave marketplace.....
 startGame()
