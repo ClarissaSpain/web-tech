@@ -1,5 +1,5 @@
 @font-face {
-  font-family: Impact;
+  font-family: 'Lacquer', sans-serif;
 }
 
 @font-face {
@@ -24,7 +24,7 @@ body {
 
 .page-title {
   color: white;
-  font-family: Impact, serif;
+  font-family: 'Lacquer', san-sans-serif;
   font-weight: normal;
   text-align: center;
   font-size: 5em;
@@ -102,7 +102,7 @@ body {
   align-items: center;
   z-index: 100;
   color: white;
-  font-family: Impact, serif;
+  font-family: 'Lacquer', sans-serif;
 }
 .overlay-text-small {
   font-size: .3em;
