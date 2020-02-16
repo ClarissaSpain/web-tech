@@ -12,4 +12,3 @@ https://youtu.be/3uuQ3g92oPQ who went over the javascript functionality.
 ![](Assets/Images/Screenshot.png)
 
 I used google fonts, different cursors, and also audio to this project because I had a veeerrry specific theme in mind for this project.
-![](Assets/Images/Screenshot_2.png)
