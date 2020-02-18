@@ -13,7 +13,7 @@
 //Referenced: Web Dev Simplified https://www.youtube.com/watch?v=28VfzEiJgy4&list=WL&index=6&t=368s
 //----------------------------------------------------------------------------
 
-
+//Audio
 class AudioController {
   constructor() {
     this.bgMusic = new Audio('Assets/Audio/Mii_music.mp3');
@@ -47,6 +47,8 @@ class AudioController {
   }
 }
 
+
+//Creating the arrays so they match with the cards.
 class MixOrMatch {
   constructor(totalTime, cards) {
     this.cardsArray = cards;
@@ -136,7 +138,8 @@ class MixOrMatch {
       this.busy = false;
     }, 1000);
   }
-  shuffleCards(cardsArray) { // Fisher-Yates Shuffle Algorithm.
+  // Fisher-Yates Shuffle Algorithm:
+  shuffleCards(cardsArray) {
     for (let i = cardsArray.length - 1; i > 0; i--) {
       let randIndex = Math.floor(Math.random() * (i + 1));
       cardsArray[randIndex].style.order = i;

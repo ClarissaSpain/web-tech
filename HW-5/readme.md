@@ -1,5 +1,5 @@
 ### Homework 5
-I had a great a fun time creating this project for Homework 5
+I had a great a fun time creating this project for Homework 5. I may have gotten a bit ahead of myself because I really enjoyed the process for the memory matching portion of it.
 
 I referenced two tutorials:
 
