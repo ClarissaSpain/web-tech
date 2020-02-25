@@ -1,157 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="mystyles.css">
-  <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
-  <script src="first.js"></script>
-  <title>Memory Card Game</title>
-</head>
-
-<body>
-  <h1 class="page-title">Memory Card Game</h1>
-  <div class="overlay-text visible">
-    Click to Start
-  </div>
-  <div id="game-over-text" class="overlay-text">
-    Game Over
-    <span class="overlay-text-small">Click to Restart</span>
-  </div>
-  <div id="victory-text" class="overlay-text">
-    VICTORY
-    <span class="overlay-text-small">Click to Restart</span>
-  </div>
-  <div class="game-container">
-    <div class="game-info-container">
-      <div class="game-info">
-        Time <span id="time-remaining">100</span>
-      </div>
-      <div class="game-info">
-        Flips <span id="flips">0</span>
-      </div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Claire Spain">
+    <link rel="stylesheet" href="myStyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+    <script src="first.js"></script>
+    <title></title>
+  </head>
+  <body>
+      <h1 class="page-title">Memory Card Game</h1>
+    <div class="overlay-data-container">
+      <div class="overlay-data" id="main">
+      <label for="firstName">First name:</label><br />
+      <input type="text" id="firstName" name="firstName"><br /><br />
+      <label for="lastName">Last name:</label><br />
+      <input type="text" id="lastName" name="lastName"><br /><br />
+      <label for="age">Age:</label><br />
+      <input type="number" id="age" name="age"><br /><br /><br />
+      <a href="game.html"><button type="button" name="submitButton" onclick="retrieveData()">Start</button></a>
     </div>
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="heart-icon" src="Assets/Images/heart.png" alt="">
-        <img class="cat-icon" src="Assets/Images/cat.png" alt="">
-      </div>
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/sadcat.jpg" alt="">
-      </div>
     </div>
 
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="heart-icon" src="Assets/Images/heart.png" alt="">
-        <img class="cat-icon" src="Assets/Images/cat.png" alt="">
-      </div>
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/sadcat.jpg" alt="">
-      </div>
-    </div>
+    <!-- <h1>Memory</h1> -->
 
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="heart-icon" src="Assets/Images/heart.png" alt="">
-        <img class="cat-icon" src="Assets/Images/cat.png" alt="">
-      </div>
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/mf_cat.jpg" alt="">
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="heart-icon" src="Assets/Images/heart.png" alt="">
-        <img class="cat-icon" src="Assets/Images/cat.png" alt="">
-      </div>
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/mf_cat.jpg" alt="">
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="heart-icon" src="Assets/Images/heart.png" alt="">
-        <img class="cat-icon" src="Assets/Images/cat.png" alt="">
-      </div>
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/polite_cat.jpg" alt="">
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="heart-icon" src="Assets/Images/heart.png" alt="">
-        <img class="cat-icon" src="Assets/Images/cat.png" alt="">
-      </div>
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/polite_cat.jpg" alt="">
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="heart-icon" src="Assets/Images/heart.png" alt="">
-        <img class="cat-icon" src="Assets/Images/cat.png" alt="">
-      </div>
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/smug_cat.jpg" alt="">
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="heart-icon" src="Assets/Images/heart.png" alt="">
-        <img class="cat-icon" src="Assets/Images/cat.png" alt="">
-      </div>
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/smug_cat.jpg" alt="">
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="heart-icon" src="Assets/Images/heart.png" alt="">
-        <img class="cat-icon" src="Assets/Images/cat.png" alt="">
-      </div>
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/smidge_cat.jpg" alt="">
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="heart-icon" src="Assets/Images/heart.png" alt="">
-        <img class="cat-icon" src="Assets/Images/cat.png" alt="">
-      </div>
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/smidge_cat.jpg" alt="">
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="heart-icon" src="Assets/Images/heart.png" alt="">
-        <img class="cat-icon" src="Assets/Images/cat.png" alt="">
-      </div>
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/snickering_cat.jpg" alt="">
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="heart-icon" src="Assets/Images/heart.png" alt="">
-        <img class="cat-icon" src="Assets/Images/cat.png" alt="">
-      </div>
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/snickering_cat.jpg" alt="">
-      </div>
-    </div>
-
-
-  </div>
-</body>
-
+  </body>
 </html>

@@ -1,5 +1,6 @@
 @font-face {
   font-family: 'Lacquer', sans-serif;
+  font-family: Arial;
 }
 
 @font-face {
@@ -102,6 +103,21 @@ body {
   align-items: center;
   z-index: 100;
   color: white;
+  font-family: 'Lacquer', sans-serif;
+}
+
+.overlay-data-container {
+  margin-top: 3em;
+  text-align: center;
+  /* justify-content: center; */
+}
+
+.overlay-data {
+  position: fixed;
+  font-size: 25px;
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
   font-family: 'Lacquer', sans-serif;
 }
 

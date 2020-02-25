@@ -11,6 +11,17 @@
 //Referenced: Web Dev Simplified https://www.youtube.com/watch?v=28VfzEiJgy4&list=WL&index=6&t=368s
 //----------------------------------------------------------------------------
 
+function retrieveData(){
+  var data = {};
+  data.firstname = document.getElementById("firstName").value;
+  data.lastname = document.getElementById("lastName").value;
+  data.age = document.getElementById("age").value;
+  localStorage.setItem("data", JSON.stringify(data));
+}
+
+function sendName(){
+    document.getElementById("name").innerHTML = JSON.parse(data).firstname;
+}
 //Audio
 class AudioController {
   constructor() {
@@ -175,4 +186,5 @@ function ready() {
       game.flipCard(card);
     });
   });
+
 }
