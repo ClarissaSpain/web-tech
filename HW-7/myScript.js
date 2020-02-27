@@ -1,4 +1,5 @@
 var pictureContainer = document.getElementById("picture-info");
+var myCatPicture = document.getElementById("catPicture");
 var btn = document.getElementById("btn");
 // document.getElementById("someImage").src = jsonObject.Images;
 btn.addEventListener("click", function() {
@@ -13,6 +14,7 @@ function renderHTML(data) {
 
     htmlString += "<p>" + "Title: " + data[i].Title + " it is " + data[i].Description + ".</p>"
     htmlString += "<p>" + " Author: " + data[i].Author + " Year: " + data[i].Year + ".</p>"
+    myCatPicture += myPictures[i].Image
   }
 
   pictureContainer.insertAdjacentHTML('beforeend', htmlString);
