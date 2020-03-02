@@ -14,10 +14,14 @@ function renderHTML(data) {
 
     htmlString += "<p>" + "Title: " + data[i].Title + " it is " + data[i].Description + ".</p>"
     htmlString += "<p>" + " Author: " + data[i].Author + " Year: " + data[i].Year + ".</p>"
-    myCatPicture += myPictures[i].Image
+    // myCatPicture += myPictures[i].Image
   }
 
   pictureContainer.insertAdjacentHTML('beforeend', htmlString);
+
+}
+function renderImage(data) {
+      document.getElementById("mainImage").src += myPictures[i].Image
 
 }
 
