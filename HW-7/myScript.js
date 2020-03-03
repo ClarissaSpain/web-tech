@@ -33,14 +33,14 @@ var catCardI;
 // document.getElementById("btn").addEventListener("click",
 // btn.addEventListener("click",
 function update(){
-  let catCard1 = new ViewCard("images/mf_cat.jpg", "Hey Ma, there's a weeeird lookin' Cat out here", "Boston Man", "a Weeeeeeeeeeeeeird Lookin' Cat, stay in the house Lucy", "2015");
-  let catCard2 = new ViewCard("images/polite_cat.jpg", "Thanks, I hate it", "Zoomers", "A very polite cat", "2079");
-  let catCard3 = new ViewCard("images/sadcat.jpg", "Spilled Milk", "Zoomers", "A cat crying over spilled milk", "1801");
-  let catCard4 = new ViewCard("images/smidge_cat.jpg", "Smidge","Zoomers", "a cat who would like to speak to his lawyer before these accusations fly", "3010");
-  let catCard5 = new ViewCard("images/smug_cat.jpg", "Smug", "Zoomers", "the smuggest of all cats", "2019");
-  let catCard6 = new ViewCard("images/snickering_cat.jpg", "😬", "Zoomers", "😬", "2020");
+  let catCard1 = new ViewCard("mf_cat.jpg", "Hey Ma, there's a weeeird lookin' Cat out here", "Boston Man", "a Weeeeeeeeeeeeeird Lookin' Cat, stay in the house Lucy", "2015");
+  let catCard2 = new ViewCard("polite_cat.jpg", "Thanks, I hate it", "Zoomers", "A very polite cat", "2079");
+  let catCard3 = new ViewCard("sadcat.jpg", "Spilled Milk", "Zoomers", "A cat crying over spilled milk", "1801");
+  let catCard4 = new ViewCard("smidge_cat.jpg", "Smidge","Zoomers", "a cat who would like to speak to his lawyer before these accusations fly", "3010");
+  let catCard5 = new ViewCard("smug_cat.jpg", "Smug", "Zoomers", "the smuggest of all cats", "2019");
+  let catCard6 = new ViewCard("snickering_cat.jpg", "😬", "Zoomers", "😬", "2020");
 
-  var catCards = [catcard1, catCard2, catCard3, catCard4, catCard5, catCard6];
+  var catCards = [catCard1, catCard2, catCard3, catCard4, catCard5, catCard6];
 
   while(random === catCardI){
     random = Math.floor(Math.random() * 6);
@@ -49,11 +49,11 @@ function update(){
 
 catCardI= random;
 
-document.getElementById("image").src = catCards[catcardI].createImage();
-document.getElementById("title").innerHTML = catCards[catcardI].imageTitle();
+document.getElementById("image").src = catCards[catCardI].createImage();
+document.getElementById("title").innerHTML = catCards[catCardI].imageTitle();
 document.getElementById("author").innerHTML = catCards[catCardI].authorName();
 document.getElementById("description").innerHTML = catCards[catCardI].imageDesc();
-document.getElementById("year").innherHTML = catCards[catCardI].imageYear();
+document.getElementById("year").innerHTML = catCards[catCardI].imageYear();
 
 }
 
