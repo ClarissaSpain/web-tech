@@ -1,8 +1,38 @@
+class ViewCard{
+  constructor(image, title, description, author, year){
+    this.image = image;
+    this.title = title;
+    this.description = description;
+    this.author = author;
+    this.year = year;
+  }
+
+  createImage(){
+    return "./images/" + this.image;
+  }
+
+  imageYear(){
+    return this.year;
+  }
+  imageTitle(){
+    return this.title;
+  }
+
+  imageDesc(){
+    return this.description;
+  }
+
+  authorName(){
+    return this.author;
+  }
+}
+
 var random;
 var catCardI;
-var btn = document.getElementById("btn");
+// var btn = document.getElementById("btn");
 // document.getElementById("btn").addEventListener("click",
-btn.addEventListener("click", function update(){
+// btn.addEventListener("click",
+function update(){
   let catCard1 = new ViewCard("images/mf_cat.jpg", "Hey Ma, there's a weeeird lookin' Cat out here", "Boston Man", "a Weeeeeeeeeeeeeird Lookin' Cat, stay in the house Lucy", "2015");
   let catCard2 = new ViewCard("images/polite_cat.jpg", "Thanks, I hate it", "Zoomers", "A very polite cat", "2079");
   let catCard3 = new ViewCard("images/sadcat.jpg", "Spilled Milk", "Zoomers", "A cat crying over spilled milk", "1801");
@@ -25,7 +55,7 @@ document.getElementById("author").innerHTML = catCards[catCardI].authorName();
 document.getElementById("description").innerHTML = catCards[catCardI].imageDesc();
 document.getElementById("year").innherHTML = catCards[catCardI].imageYear();
 
-});
+}
 
 
 // var pictureContainer = document.getElementById("picture-info");
