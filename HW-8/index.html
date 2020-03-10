@@ -26,7 +26,6 @@
     <div class="div3">
       <div class="circle"></div>
     </div>
-    <div class="">
       <div class="div1" id="cycler">
         <img class="active" src="Images/polite_cat.jpg" alt="Polite Cat" />
         <img src="Images/mf_cat.jpg" alt="Weird Cat" />
@@ -34,7 +33,6 @@
         <img src="Images/smidge_cat.jpg" alt="Smidge the cat" />
         <img src="Images/smug_cat.jpg" alt="Very Smug cat" />
         <img src="Images/snickering_cat.jpg" alt="He's laughing at you" />
-      </div>
     </div>
 
     <br>
@@ -61,14 +59,17 @@
       $active.css('z-index', 1).show().removeClass('active'); //reset the z-index and unhide the image
       $next.css('z-index', 6).addClass('active'); //make the next image the top one
     });
+
   }
   function moveShapes() {
-    
+
+
   }
 
   $(document).ready(function() {
     // run every 7s
     setInterval('cycleImages()', 7000);
+    // $(".circle").animate({right: '250px'});
   })
 
 </script>
