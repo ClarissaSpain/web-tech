@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="Author" content="Claire Spain">
+  <link rel="stylesheet" href="myStyles.css">
+  <title>Homework 8</title>
+</head>
+
+<body>
+  <div id="cycler">
+    <img class="active" src="Images/polite_cat.jpg" alt="Polite Cat" />
+    <img src="Images/mf_cat.jpg" alt="Weird Cat" />
+    <img src="Images/sadcat.jpg" alt="Sad Cat" />
+    <img src="Images/smidge_cat.jpg" alt="Smidge the cat" />
+    <img src="Images/smug_cat.jpg" alt="Very Smug cat" />
+    <img src="Images/snickering_cat.jpg" alt="He's laughing at you" />
+  </div>
+<div id="test-cycler" class="">
+    <p class="active"></p>
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script>
+  function cycleImages(){
+      var $active = $('#cycler .active');
+      var $next = ($active.next().length > 0) ? $active.next() : $('#cycler img:first');
+      $next.css('z-index',2);//move the next image up the pile
+      $active.fadeOut(1500,function(){//fade out the top image
+	  $active.css('z-index',1).show().removeClass('active');//reset the z-index and unhide the image
+          $next.css('z-index',3).addClass('active');//make the next image the top one
+      });
+    }
+
+$(document).ready(function(){
+// run every 7s
+setInterval('cycleImages()', 7000);
+})
+</script>
+<script src="myScript.js"></script>
+
+</html>
