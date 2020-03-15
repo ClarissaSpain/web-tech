@@ -1,0 +1,30 @@
+html{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body{
+/* height: 100%; */
+
+background-image: linear-gradient( #1e0094, #0df0ea, white, #feff8e);
+}
+
+.logoheader{
+  text-align: center;
+}
+
+
+@font-face {
+    font-family: 'stardew_valleyregular';
+    src: url('./font/stardew_valley-webfont.woff2') format('woff2'),
+         url('./font/stardew_valley-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.subheader{
+  font-family: 'stardew_valleyregular';
+  text-align: center;
+  color: green;
+}
