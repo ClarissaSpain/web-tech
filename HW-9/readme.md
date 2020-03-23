@@ -29,4 +29,6 @@ Blackbird Alert()s (good for debugging)
 
 
 The second I got the JQuery Ajax to actually pull stuff from the r/StardewValley json I was super excited.
-Now, I had to figure out how to display my data... 
+Now, I had to figure out how to display my data...
+
+Initially, I wanted to show images from the subreddit page, but then I realized that images in html don't quite work with url links and that I would need a folder of images.
