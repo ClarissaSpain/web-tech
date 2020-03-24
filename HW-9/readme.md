@@ -3,8 +3,8 @@ JSON and JQuery
 
 1. Find a dataset to display @
 2. Use jQuery and AJAX to access the JSON file @
-3. Display your data in a meaningful way
-4. Create a jQuery plugin that you can apply to your data as well.
+3. Display your data in a meaningful way @
+4. Create a jQuery plugin that you can apply to your data as well. @
 
 jQuery.getJSON( url [, data ] [, success ] )
 
@@ -32,3 +32,6 @@ The second I got the JQuery Ajax to actually pull stuff from the r/StardewValley
 Now, I had to figure out how to display my data...
 
 Initially, I wanted to show images from the subreddit page, but then I realized that images in html don't quite work with url links and that I would need a folder of images.
+SOOOOO, I'm going to do random descriptions from the subreddit.
+
+UPDATE: I FIGURED OUT IMAGES OH MY GOODNESS HOLY HANNAH
