@@ -1,0 +1,21 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  font-family: fantasy;
+  /* font-size: 75px; */
+  text-align: center;
+}
+
+#pong {
+/* background-color: pink; */
+  border: 2px solid #FFF;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
