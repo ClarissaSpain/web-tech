@@ -12,3 +12,5 @@ the canvas.
 collected, and the collectibles disappear.
 10. Show an increase in the score when a picking up a
 collectible
+
+I'm sorry I'm still working on this project.
