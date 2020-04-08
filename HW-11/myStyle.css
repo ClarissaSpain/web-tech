@@ -13,7 +13,14 @@ canvas {
     bottom: 0;
     left: 0;
     right: 0;
+    width: 512px;
+    height: 512px;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
 }
+
 
 .wrapper {
     width: 512px;
