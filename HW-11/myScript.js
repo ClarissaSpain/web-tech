@@ -1,4 +1,6 @@
 //work in progesss
+
+
 var ctx = document.getElementById('game').getContext('2d');
 // load image
 var image = new Image();
