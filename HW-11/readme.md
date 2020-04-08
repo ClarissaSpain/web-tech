@@ -1,3 +1,5 @@
+### Homework 11
+
 1. Create a JSON file with at least five objects in it.
 2. Create a class for your objects in the JSON file.
 3. Add all objects to the array.
@@ -13,4 +15,8 @@ collected, and the collectibles disappear.
 10. Show an increase in the score when a picking up a
 collectible
 
-I'm sorry I'm still working on this project.
+I'm sorry I'm still working on this project. I have a hard time actually using JSon,
+I understand Json, but for whatever reason my brain can't figure out how to use it.
+
+
+![My Sprite for the game](/assets/screenshot.jpg)
