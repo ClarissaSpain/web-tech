@@ -1,19 +1,11 @@
-var canvas = document.getElementById("myCanvas");
-         var ctx = canvas.getContext("2d");
-         var x = 50;
-         var y = 50;
-         ctx.fillStyle = "#0000FF";
-         drawSquare();
-         setInterval(update, 1000);
+var canvas = document.getElementById("game");
+var ctx = canvas.getContent('2D');
 
-         function update()
-         {
+//sounds
+var soundtrack = new Audio();
+var hit = new Audio();
 
-             drawSquare();
-         }
+soundtrack.src = "./assets/soundtrack.mp3";
+hit.src = "./assets/hit.mp3";
 
-         function drawSquare()
-         {
-             ctx.fillRect(x, y, 20, 20);
-         }
-//is struggling
+var backgroundcolor= "grey";
