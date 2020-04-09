@@ -1,6 +1,6 @@
 ### Homework 11
 
-1. Create a JSON file with at least five objects in it.
+1. Create a JSON file with at least five objects in it.@
 2. Create a class for your objects in the JSON file.
 3. Add all objects to the array.
 4. Create an object for your player and make sure it can move with
@@ -18,5 +18,5 @@ collectible
 I'm sorry I'm still working on this project. I have a hard time actually using Json,
 like~I understand Json, but for whatever reason my brain can't figure out how to use it.
 
-
+So, I decided to throw the Doom eternal soundtrack on and get to coding.
 ![My Sprite for the game](/assets/screenshot.jpg)

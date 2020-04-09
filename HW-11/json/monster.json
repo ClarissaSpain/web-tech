@@ -1,31 +1,31 @@
 //collectable power boost?
 
 {
-  "monster": [
+  "monsters": [
     {
-      "image":"../assets/monster_sprite.png",
+      "image":"./assets/monster_sprite.png",
       "x":25,
       "y":25
     },
     {
-      "image":"../assets/monster_sprite.png",
-      "x":25,
-      "y":25
+      "image":"./assets/monster_sprite.png",
+      "x":50,
+      "y":50
     },
     {
-      "image":"../assets/monster_sprite.png",
-      "x":25,
-      "y":25
+      "image":"./assets/monster_sprite.png",
+      "x":10,
+      "y":65
     },
     {
-      "image":"../assets/monster_sprite.png",
-      "x":25,
-      "y":25
+      "image":"./assets/monster_sprite.png",
+      "x":100,
+      "y":5
     },
     {
-      "image":"../assets/monster_sprite.png",
-      "x":25,
-      "y":25
+      "image":"./assets/monster_sprite.png",
+      "x":10,
+      "y":30
     },
   ]
 }
