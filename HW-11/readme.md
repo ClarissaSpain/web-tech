@@ -19,4 +19,7 @@ I'm sorry I'm still working on this project. I have a hard time actually using J
 like~I understand Json, but for whatever reason my brain can't figure out how to use it.
 
 So, I decided to throw the Doom eternal soundtrack on and get to coding.
+
+I will figure this out if it kills me.
+
 ![My Sprite for the game](/assets/screenshot.jpg)
