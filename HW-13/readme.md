@@ -1,7 +1,3 @@
 ### Homework 13
 
-Have at least two shapes on your screen.
-Incorporate a model of yours onto the screen.
-Have the shapes/models rotating around or moved based on the mouse (you will have to search for that one.)
-Upload everything to your GitHub repository and turn your link into Moodle.
-Have fun with this!
+This was super interesting! I don't know if I did this very well, I had to look at a lot of documentation to get a model up and running on the webpage, but I'm glad that it showed up eventually!
